@@ -1,1 +1,196 @@
-
+{
+	"name": "Okami",
+	"size": "M",
+	"type": "fiend",
+	"source": "NPCD",
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 18,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "25d8 + 50",
+		"average": 162
+	},
+	"speed": {
+		"walk": 50,
+		"fly": 60,
+		"canHover": false
+	},
+	"str": 22,
+	"dex": 14,
+	"con": 15,
+	"int": 14,
+	"wis": 18,
+	"cha": 20,
+	"passive": 14,
+	"cr": "10",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://images-ext-1.discordapp.net/external/UGFH3MVKLG1wzdYjdAjSEnoaPHM9DGWFMy_ENqOwfIE/https/images-ext-2.discordapp.net/external/areolNCgAbsoIvlKVgJsnfejppQC9hkcoJsUmhj3Mfc/%253Fwidth%253D462%2526height%253D677/https/media.discordapp.net/attachments/749227838875631647/775777992114831390/eb1c1b85e96e73f8485410c58dd9e9e7.png"
+				}
+			}
+		]
+	},
+	"senses": [
+		"truesight 60 ft."
+	],
+	"senseTags": [
+		"U"
+	],
+	"languages": [
+		"Common",
+		"Infernal",
+		"Ignan"
+	],
+	"languageTags": [
+		"C",
+		"I",
+		"IG"
+	],
+	"save": {
+		"dex": "+6",
+		"con": "+6"
+	},
+	"skill": {
+		"intimidation": "+9",
+		"arcana": "+6",
+		"acrobatics": "+6",
+		"athletics": "+10"
+	},
+	"immune": [
+		"fire"
+	],
+	"conditionImmune": [
+		"charmed",
+		"frightened",
+		"prone"
+	],
+	"resist": [
+		{
+			"resist": [
+				"cold"
+			]
+		},
+		{
+			"resist": [
+				"necrotic"
+			]
+		},
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks"
+		}
+	],
+	"spellcasting": [
+		{
+			"name": "Innate Spellcasting",
+			"headerEntries": [
+				"Frehty innate spellcasting ability is charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He can innately cast the following spells, requiring no components:"
+			],
+			"will": [
+				"{@spell Aganazzar's scorcher|XGE}"
+			],
+			"daily": {
+				"1": [
+					"{@spell fire storm}"
+				],
+				"3e": [
+					"{@spell counterspell}",
+					"{@spell dispel magic}"
+				]
+			},
+			"ability": "cha",
+			"type": "spellcasting"
+		}
+	],
+	"spellcastingTags": [
+		"I"
+	],
+	"trait": [
+		{
+			"name": "Fire Aura",
+			"entries": [
+				"At the start of each of the okami's turns, each creature within 5 feet of it takes 10 ({@damage 3d6}) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the okami or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) fire damage."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The okami has advantage on saving throws against spells and other magical effects."
+			]
+		}
+	],
+	"damageTags": [
+		"S",
+		"F"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"traitTags": [
+		"Magic Resistance"
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Okami makes one greatsword attack and four tentalc attacks."
+			]
+		},
+		{
+			"name": "Greatsword",
+			"entries": [
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+			]
+		},
+		{
+			"name": "Tentacle",
+			"entries": [
+				"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}8 ({@damage 1d4 + 6}) fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack",
+		"Tentacles"
+	],
+	"legendary": [
+		{
+			"name": "Attack",
+			"entries": [
+				"Okami plant makes one attack."
+			]
+		},
+		{
+			"name": "Teleport (Costs 2 Action)",
+			"entries": [
+				"Okami teleports up to 120 feet to an unoccupied space he can see. Anything the fire demon spirit is wearing or carrying isn't teleported with him."
+			]
+		},
+		{
+			"name": "End Magic (Costs 3 Action)",
+			"entries": [
+				"Okami casts dispel magic."
+			]
+		}
+	],
+	"tokenUrl": "https://media.discordapp.net/attachments/720391035846525078/777755468427821066/token_1_20.png"
+}
